@@ -11,14 +11,11 @@ class Users
 {
 private:
 	string name;
-	string idd;
+	string userid;
 	string password;
 public:
-	//Users();
-	//~Users();
 	void setUser(string nm, string id, string psw);
 	void display();
-	//void registe();
 };
 
 string randomID()
@@ -78,11 +75,11 @@ int main()
 void Users::setUser(string nm, string id, string psw)
 {
 	name = nm;
-	idd = id;
+	userid = id;
 	password = psw;
 
 };
 void Users::display()
 {
-	cout << name << idd << password << endl;
+	cout << name << userid << password << endl;
 };
